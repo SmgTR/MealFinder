@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Ipad Pro 11\" 64GB",
+    "brand": "Apple",
+    "category": "tablet",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut accusantium tenetur veniam animi quasi quidem velit assumenda earum dolores debitis id quod voluptatum officia, nostrum aperiam nemo delectus eius alias, reiciendis unde. Libero quo fugiat perferendis maiores, animi, recusandae veritatis id explicabo dolorum dolor deserunt, ex, iusto non magni reiciendis vero quae. Sapiente consequuntur beatae eligendi, accusantium assumenda velit.",
+    "price": 812,
+    "ratings": [4, 5, 4, 3],
+    "img": "img/ipad11.png"
+  },
+  {
+    "name": "Ipad Pro 11\" 128GB",
+    "brand": "Apple",
+    "category": "tablet",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut accusantium tenetur veniam animi quasi quidem velit assumenda earum dolores debitis id quod voluptatum officia, nostrum aperiam nemo delectus eius alias, reiciendis unde. Libero quo fugiat perferendis maiores, animi, recusandae veritatis id explicabo dolorum dolor deserunt, ex, iusto non magni reiciendis vero quae. Sapiente consequuntur beatae eligendi, accusantium assumenda velit.",
+    "price": 980,
+    "ratings": [4, 5, 2, 4],
+    "img": "img/ipad11.png"
+  },
+  {
+    "name": "Ipad Air 10.9\" 64GB",
+    "brand": "Apple",
+    "category": "tablet",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut accusantium tenetur veniam animi quasi quidem velit assumenda earum dolores debitis id quod voluptatum officia, nostrum aperiam nemo delectus eius alias, reiciendis unde. Libero quo fugiat perferendis maiores, animi, recusandae veritatis id explicabo dolorum dolor deserunt, ex, iusto non magni reiciendis vero quae. Sapiente consequuntur beatae eligendi, accusantium assumenda velit.",
+    "price": 722,
+    "ratings": [4, 4, 4, 3, 2, 1, 2],
+    "img": "img/ipad_air.png"
+  },
+  {
+    "name": "Ipad Air 10.9\" 128GB",
+    "brand": "Apple",
+    "category": "tablet",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut accusantium tenetur veniam animi quasi quidem velit assumenda earum dolores debitis id quod voluptatum officia, nostrum aperiam nemo delectus eius alias, reiciendis unde. Libero quo fugiat perferendis maiores, animi, recusandae veritatis id explicabo dolorum dolor deserunt, ex, iusto non magni reiciendis vero quae. Sapiente consequuntur beatae eligendi, accusantium assumenda velit.",
+    "price": 800,
+    "ratings": [4, 5, 4, 3, 4, 5, 1, 1, 1],
+    "img": "img/ipad_air.png"
+  },
+  {
+    "name": "Galaxy Tab A7 10.4\" 32GB",
+    "brand": "Samsung",
+    "category": "tablet",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut accusantium tenetur veniam animi quasi quidem velit assumenda earum dolores debitis id quod voluptatum officia, nostrum aperiam nemo delectus eius alias, reiciendis unde. Libero quo fugiat perferendis maiores, animi, recusandae veritatis id explicabo dolorum dolor deserunt, ex, iusto non magni reiciendis vero quae. Sapiente consequuntur beatae eligendi, accusantium assumenda velit.",
+    "price": 949,
+    "ratings": [4, 3, 2, 3, 4, 2],
+    "img": "img/taba7.png"
+  },
+  {
+    "name": "Ipad 10.9\" 32GB",
+    "brand": "Apple",
+    "category": "tablet",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut accusantium tenetur veniam animi quasi quidem velit assumenda earum dolores debitis id quod voluptatum officia, nostrum aperiam nemo delectus eius alias, reiciendis unde. Libero quo fugiat perferendis maiores, animi, recusandae veritatis id explicabo dolorum dolor deserunt, ex, iusto non magni reiciendis vero quae. Sapiente consequuntur beatae eligendi, accusantium assumenda velit.",
+    "price": 2490,
+    "ratings": [4, 3, 5, 2, 1, 1],
+    "img": "img/ipad.png"
+  },
+  {
+    "name": "Surface Pro 128GB",
+    "brand": "Microsoft",
+    "category": "tablet",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut accusantium tenetur veniam animi quasi quidem velit assumenda earum dolores debitis id quod voluptatum officia, nostrum aperiam nemo delectus eius alias, reiciendis unde. Libero quo fugiat perferendis maiores, animi, recusandae veritatis id explicabo dolorum dolor deserunt, ex, iusto non magni reiciendis vero quae. Sapiente consequuntur beatae eligendi, accusantium assumenda velit.",
+    "price": 5099,
+    "ratings": [4, 3, 2, 3, 5, 5, 4, 1, 2, 1],
+    "img": "img/ipad11.png"
+  },
+  {
+    "name": "Ipad 10.9\"",
+    "brand": "Apple",
+    "category": "tablet",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut accusantium tenetur veniam animi quasi quidem velit assumenda earum dolores debitis id quod voluptatum officia, nostrum aperiam nemo delectus eius alias, reiciendis unde. Libero quo fugiat perferendis maiores, animi, recusandae veritatis id explicabo dolorum dolor deserunt, ex, iusto non magni reiciendis vero quae. Sapiente consequuntur beatae eligendi, accusantium assumenda velit.",
+    "price": 2490.0,
+    "ratings": [2, 3, 2, 3, 2, 2, 5, 5],
+    "img": "img/ipad11.png"
+  },
+  {
+    "name": "MediaPad M5 Lite"",
+    "brand": "Huawei",
+    "category": "tablet",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut accusantium tenetur veniam animi quasi quidem velit assumenda earum dolores debitis id quod voluptatum officia, nostrum aperiam nemo delectus eius alias, reiciendis unde. Libero quo fugiat perferendis maiores, animi, recusandae veritatis id explicabo dolorum dolor deserunt, ex, iusto non magni reiciendis vero quae. Sapiente consequuntur beatae eligendi, accusantium assumenda velit.",
+    "price": 320,
+    "ratings": [2, 2, 2, 3, 5, 5, 2],
+    "img": "img/huamediapad.png"
+  }
+]

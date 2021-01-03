@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Cook's Recipes - Become a cook</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Zilla+Slab:wght@300;700&display=swap" rel="stylesheet" />
+  <meta property="og:image" content="https://images.pexels.com/photos/4191621/pexels-photo-4191621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+  <link rel="manifest" href="./fav/site.webmanifest">
+
+</head>
+
+<body>
+  <section class="top__nav">
+    <div class="top__nav--left">
+      <h2 class="top__nav-logo"><a href="#">Cook's Recipes</a></h2>
+      <p class="top__nav-description">Cook with best recipes</p>
+    </div>
+
+    <form class="top__nav--center" id="submit" autocomplete="off">
+      <input type="text" class="top__nav-search" id="search" placeholder="Search recipes by name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search recipes by name'"/>
+      <button class="btn btn--search" type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+
+    <div class="top__nav--right" id="user">
+        <div class="top__nav-user">
+          <img class="top__nav-user--img" src="img/user.svg"/>
+          <div class="user__container">
+            <span class="top__nav-user--name" id="user__login"></span>
+            <ul class="user__popup">
+              <li id="settings" class="go__settings">Settings</li>
+              <li id="logout" class="logout">Log Out</li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+
+    <div class="top__nav--right">
+      <ul class="top__nav-sign">
+        <li class="top__nav-sign--in" id="sign__in">Sign in</li>
+        <li class="top__nav-sign--up" id="sign__up">Sign up</li>
+      </ul>
+    </div>
+
+
+
+
+
+  </section>
+
+  <div class="mobile__nav">
+    <div class="mobile__nav--el">
+      <i class="fas fa-home go__home mobile__home"></i>
+      <p>Home</p>
+    </div>
+    <div class="mobile__nav--el">
+
+    <i class="fas fa-heart go__fav mobile__fav "></i>
+    <p>Favourites</p>
+    </div>
+
+    <div class="mobile__nav--el mobile__cat">
+
+    <i class="fas fa-list cat__icon"></i>
+    <p>Categories</p>
+    </div>
+
+    <div class="mobile__nav--el mobile__nav--sett">
+
+    <i class="fas fa-cog mobile__settings go__settings"></i>
+    <p class="sett">Settings</p>
+    </div>
+
+    <div class="mobile__nav--el mobile__nav--logout">
+
+    <i class="fas fa-sign-out-alt mobile__log-out logout"></i>
+    <p class="logout__txt">Log Out</p>
+  </div>
+
+    <div class="mobile__nav--el mobile__nav--login">
+    <i class="fas fa-sign-in-alt mobile__log-in" id="mob__log"></i>
+    <p class="logg">Log In</p>
+    </div>
+
+
+  </div>
+
+  <div class="mobile__cat__popup">
+    <p class="close">X</p>
+    <ul class="mobile__cat__popup__list"></ul>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="popup__container">
+
+      <i class="fas fa-times popup__icon"></i>
+      <h2 id="popup-title" class="popup-title">Register With Us</h2>
+    <form id="form" class="popup__form">
+
+
+      <div class="form-control">
+        <label for="username">Username</label>
+        <input type="text" id="username" data-name="username" placeholder="Enter username" />
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" data-name="email" id="email" placeholder="Enter email" />
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" data-name="password" id="password" placeholder="Enter password" />
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="password2">Confirm Password</label>
+        <input type="password" data-name="password2" id="password2" placeholder="Enter password again" />
+        <small>Error message</small>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="popup__log-bot">
+      <h2 class="popup__log-bot__title">Sign up with</h2>
+      <div class="popup__log-bot-services">
+        <i class="fab fa-google google"></i>
+        <i class="fab fa-facebook-f facebook"></i>
+      </div>
+    </div>
+    <p class="firebase__error"></p>
+
+  </div>
+  </div>
+
+  <div class="popup" id="popup--log">
+
+
+    <div class="popup__container">
+      <i class="fas fa-times popup__icon"></i>
+      <h2 id="login-title" class="popup-title">Sign in</h2>
+      <p class="firebase__error log"></p>
+        <form  id="login__form" class="popup__form">
+
+
+
+
+    <div class="form-control">
+      <label for="email">Email</label>
+      <input type="text" class="email" data-name="email" id="log-in__email" placeholder="Enter email" />
+
+    </div>
+    <div class="form-control" id="password-hide">
+      <label for="password">Password</label>
+      <input type="password" id="log-in__password" data-name="password" placeholder="Enter password" />
+    </div>
+    <button class="log__btn" type="submit">Submit</button>
+
+  </form>
+
+  <div class="popup__log-bot">
+    <h2 class="popup__log-bot__title">Sign in with</h2>
+    <div class="popup__log-bot-services">
+      <i class="fab fa-google google"></i>
+      <i class="fab fa-facebook-f facebook"></i>
+    </div>
+  </div>
+
+  <p class="popup__reset"></p>
+  <p class="popup__create"></p>
+</div>
+</div>
+  <div class="container">
+
+    <div class="nav__container">
+      <nav class="nav">
+        <h2 class="nav__title--nav">Discover</h2>
+        <ul class="nav__list">
+          <li id="home" class="list__item go__home"></a><i class="fas fa-home"></i><span>Home</span></li>
+          <li id="favourites" class="list__item go__fav"><i class="fas fa-heart"></i><span class="nav__user-text">Favourites</span><p class="sum__of-fav"></p></li>
+        </ul>
+        <h2 class="nav__title--nav m-low">Library</h2>
+        <ul class="nav__list nav__list--categories" id="nav__categories"></ul>
+      </nav>
+    </div>
+
+    <main>
+      <section class="recipes">
+        <div class="fav_res">
+          <div id="result-heading">Discover recipes:</div>
+          <div class="favourite">
+            <p class="fav__child">Add to favourite</p><i class="far fa-heart fav"></i>
+          </div>
+        </div>
+        <div id="meals" class="meals">
+
+
+
+
+
+        </div>
+
+        <div id="single-meal"></div>
+
+        <div id="loadAnim"></div>
+      </section>
+    </main>
+
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <li><a href="https://itutorials.pl" class="footer-links--item"><i class="fas fa-user"></i><span>Portfolio</span></a></li>
+      <li><a href="https://www.linkedin.com/in/tomasz-rusnak-9267b3201/" class="footer-links--item" target="_blank"><i class="fab fa-linkedin"><span></i>LinkedIn</span></a></li>
+    </div>
+
+  </footer>
+    <!-- User icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v9.0&appId=366891247930205&autoLogAppEvents=1" nonce="LiN7v9KT"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script src="svg.js"></script>
+
+  <script src="validation.js"></script>
+  <script src="fav.js"></script>
+  <script src="firebase.js"></script>
+  <script src="form.js"></script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

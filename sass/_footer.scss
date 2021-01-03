@@ -1,0 +1,45 @@
+.footer {
+  min-height: 20rem;
+  margin-top: 5rem;
+  color: $secondary-color;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    width: 80%;
+    height: 0.4rem;
+    background: $secondary-color;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    &--item,
+    &--item:active,
+    &--item:visited {
+      text-decoration: none;
+      color: $secondary-color;
+    }
+
+    & span {
+      margin-left: 1rem;
+    }
+
+    & li:first-child {
+      margin-right: 2rem;
+    }
+  }
+}

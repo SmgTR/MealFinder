@@ -1,0 +1,130 @@
+.recipes {
+  padding: 0 2rem;
+  width: 75vw;
+  @include respond(tab-port) {
+    margin: 0 auto 10rem auto;
+    width: 100vw;
+    padding: 0 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      transition: 0.4s;
+      transform: translateY(-10px);
+      cursor: pointer;
+      // classes added in js, box shadow base on background-color
+      & .box-shadow--orange {
+        transition: 0.2s;
+        box-shadow: -6px 4px 8px rgba(darken($color-orange, 60%), 0.2);
+      }
+      & .box-shadow--red {
+        transition: 0.2s;
+        box-shadow: -6px 4px 10px rgba(darken($color-red, 60%), 0.2);
+      }
+      & .box-shadow--green {
+        transition: 0.2s;
+        box-shadow: -6px 4px 10px rgba(darken($color-green, 60%), 0.2);
+      }
+    }
+
+    &:active {
+      transform: translateY(-8px);
+    }
+  }
+}
+#result-heading {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-top: -0.7rem;
+
+  @include respond(tab-port) {
+    margin: 0 auto 0 2.6rem;
+    text-align: left;
+    margin-bottom: 2.6rem;
+  }
+}
+
+.title {
+  background-color: $color-orange;
+  height: 11.5rem;
+  width: 40rem;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: translateX(-4rem);
+
+  & h2 {
+    padding: 2rem 0;
+    font-weight: 300;
+    width: 65%;
+    line-height: 2.4rem;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+}
+.img {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  z-index: 20;
+  // -webkit-transform: translateZ(0);
+  @include respond(tab-port) {
+    width: 12rem !important;
+    height: 12rem !important;
+  }
+}
+
+.meals {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 4rem;
+
+  @include respond(tab-port) {
+    margin-top: 2rem;
+    margin-left: 2.6rem;
+    row-gap: 4rem;
+  }
+}
+
+.red {
+  background-color: $color-red;
+}
+
+.green {
+  background-color: $color-green;
+
+  &::after {
+    content: "";
+    height: 2.8rem;
+    width: 2.4rem;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background-color: #73b863;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 49% 62%, 0% 99%);
+  }
+}
+
+.leaf {
+  position: absolute;
+  top: 3%;
+  right: 12%;
+  font-size: 1.2rem;
+  z-index: 100;
+  color: #fff;
+}
+
+.link__to-meal,
+.link__to-meal:active,
+.link__to-meal:visited {
+  color: $secondary-color;
+  text-decoration: none;
+}

@@ -1,0 +1,251 @@
+.popup {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($secondary-color, 0.6);
+  transition: all 0.4s;
+
+  @supports (-webkit-backdrop-filter: blur(2px)) or (backdrop-filter: blur(2px)) {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background-color: rgba($secondary-color, 0.6);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 2rem;
+    color: $secondary-color;
+
+    &:hover {
+      cursor: pointer;
+      color: $heart-color;
+    }
+    &:active,
+    &:link {
+      color: $secondary-color;
+    }
+  }
+
+  &__container {
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-height: 80%;
+    background-color: $main-color;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(tab-port) {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  &__form {
+    & button {
+      cursor: pointer;
+      background-color: $secondary-color;
+      border-radius: 10px;
+      color: #fff;
+      display: block;
+      font-size: 16px;
+      padding: 10px;
+      margin-top: 3rem;
+      width: 100%;
+      outline: none;
+      transition: all 0.4s;
+      border: 1px solid transparent;
+
+      &:hover {
+        transform: translateY(-2px);
+        border: 1px solid $secondary-color;
+        background-color: $main-color;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  &__reset {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+
+    & span {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__create {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+
+    & span {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: $color-success;
+}
+
+.form-control.error input {
+  border-color: $heart-color;
+}
+
+.form-control small {
+  color: $heart-color;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  visibility: hidden;
+  font-size: 1.2rem;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.firebase__error {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  color: $heart-color;
+}
+.firebase__error.log {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  color: $heart-color;
+}
+
+.popup-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+}
+
+#password-hide {
+  display: none;
+}
+
+.popup__log-bot {
+  margin-top: 3rem;
+
+  &__title {
+    font-size: 1.8rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 4rem;
+      height: 0.2rem;
+      background-color: $secondary-color;
+      position: absolute;
+      top: 50%;
+      right: 110%;
+    }
+    &::after {
+      content: "";
+      width: 4rem;
+      height: 0.2rem;
+      background-color: $secondary-color;
+      position: absolute;
+      top: 50%;
+      left: 110%;
+    }
+  }
+  &-services {
+    margin-top: 2.4rem;
+    font-size: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.google,
+.facebook {
+  cursor: pointer;
+  color: $hover-color;
+  transition: color transform 0.4s;
+  &:hover {
+    color: $secondary-color;
+    transform: scale(1.2);
+  }
+}
+
+.mobile__cat__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $main-color;
+  z-index: 50;
+  display: none;
+
+  &__list {
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+    & li {
+      font-size: 1.8rem;
+      list-style: none;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.close {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+  padding: 1rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}

@@ -1,0 +1,150 @@
+.back {
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid transparent;
+  color: $secondary-color;
+
+  &:hover {
+    transition: border color 0.4s;
+
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 100%;
+  }
+}
+
+.fav_res {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  @include respond(tab-port) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.favourite {
+  margin-left: auto;
+  font-size: 2rem;
+  display: none;
+  align-items: center;
+
+  @include respond(tab-port) {
+    margin: 0 auto 0 2.6rem;
+  }
+
+  & p {
+    margin-right: 1rem;
+  }
+
+  .fav-red {
+    color: $heart-color;
+    cursor: pointer;
+  }
+
+  .fav:hover {
+    color: $heart-color;
+    cursor: pointer;
+  }
+}
+
+.meal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  font-size: 2rem;
+  @include respond(tab-port) {
+    text-align: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    margin-bottom: 2.8rem;
+  }
+
+  &__categories {
+    list-style: none;
+    display: flex;
+    margin-bottom: 2rem;
+
+    & li {
+      margin-top: 0.6rem;
+      padding: 0.4rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__img {
+    width: 56rem;
+    height: 35rem;
+    @include respond(tab-port) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__instruction {
+    font-size: 2.2rem;
+    line-height: 4rem;
+    width: 95%;
+
+    @include respond(tab-port) {
+      width: 80%;
+    }
+  }
+
+  &__ingredients {
+    margin-top: 10rem;
+    align-self: center;
+    transform: translate(-50%, -50%);
+  }
+
+  &__ing-list {
+    margin-top: 2.8rem;
+    list-style: none;
+    align-self: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 80%;
+    font-size: 1.6rem;
+
+    & li {
+      border: 1px solid #000;
+      padding: 0.8rem;
+      border-radius: 10px;
+      margin: 1rem;
+    }
+  }
+}
+
+.source {
+  margin-top: 10rem;
+  font-size: 1.6rem;
+}
+
+.back__link a,
+.back__link a:visited,
+.back__link a:active {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+.share__icons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 17rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.yt__mov {
+  @include respond(tab-port) {
+    width: 100%;
+    min-height: 100%;
+  }
+}
+
+.fav__no-log {
+  color: $hover-color;
+}

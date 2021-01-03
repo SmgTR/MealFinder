@@ -1,0 +1,179 @@
+.container {
+  padding: 5em;
+  display: flex;
+
+  @include respond(tab-port) {
+    display: block;
+    width: 100vw;
+    padding: 0;
+  }
+}
+
+.nav {
+  text-align: left;
+  @include respond(tab-port) {
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15vw;
+    flex-shrink: 0;
+  }
+
+  &__title--nav {
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+    color: rgba($secondary-color, 0.3);
+    text-transform: uppercase;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__list {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: left;
+    list-style: none;
+    margin: 2rem 0;
+
+    & a,
+    li:not(:last-child) {
+      margin-bottom: 1.4rem;
+    }
+    & a,
+    li {
+      width: 14rem;
+      display: flex;
+      align-items: center;
+      @include respond(phone) {
+        width: 2rem;
+      }
+    }
+    & li:last-child {
+      min-width: 16rem;
+    }
+
+    & span {
+      margin-left: 2rem;
+      font-size: 1.8rem;
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    &--categories {
+      font-size: 1.8rem;
+      font-weight: 300;
+
+      @include respond(tab-port) {
+        display: none;
+      }
+
+      & li:hover {
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      & li:not(:last-child) {
+        margin-bottom: 2rem;
+        width: 1rem;
+      }
+    }
+  }
+}
+
+.m-low {
+  margin: 3rem 0;
+}
+
+.list__item {
+  cursor: pointer;
+  padding: 1rem 0;
+  transition: padding 0.4s;
+}
+
+@include respond(hovers) {
+  .list__item:hover {
+    color: #fff;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+  }
+}
+
+.sum__of-fav {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  background-color: $heart-color;
+  border-radius: 50%;
+  color: $main-color;
+  min-width: 2rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#home {
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+#favourites {
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+.mobile__nav {
+  display: none;
+  @include respond(tab-port) {
+    width: 100%;
+    height: 10rem;
+    background-color: $main-color;
+    position: fixed;
+    top: 90%;
+    left: 0;
+    z-index: 100;
+    border-top: 1px solid $secondary-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.4s;
+  }
+
+  &--el {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & p {
+      margin-top: 0.6rem;
+    }
+  }
+}
+
+.mobile__fav,
+.mobile__home,
+.mobile__settings,
+.mobile__log-out,
+.mobile__log-in,
+.cat__icon {
+  text-align: center;
+  display: none;
+  visibility: hidden;
+  cursor: pointer;
+  @include respond(tab-port) {
+    visibility: visible;
+    display: block;
+    font-size: 2.6rem;
+  }
+}
